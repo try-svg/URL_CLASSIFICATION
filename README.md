@@ -7,12 +7,9 @@
 - [Overview](#overview)
 - [Usage](#usage)
 - [Local Device Installation](#local-device-installation)
-- [Database for Feedback](#database-for-feedback)
 - [Training Data Collection](#training-data-collection)
 - [Data Modeling and Model Architecture](#data-modeling-and-model-architecture)
 - [Model Performance](#model-performance)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
