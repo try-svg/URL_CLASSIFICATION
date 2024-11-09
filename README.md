@@ -5,7 +5,6 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Project Deployment](#project-deployment)
 - [Usage](#usage)
 - [Local Device Installation](#local-device-installation)
 - [Database for Feedback](#database-for-feedback)
@@ -17,10 +16,7 @@
 
 ## Overview
 
-The URL Classifier is a powerful machine learning application designed to classify URLs as safe or malicious. In today's cybersecurity landscape, identifying potentially harmful URLs is crucial in mitigating cyber threats and phishing attacks. This project leverages both Natural Language Processing (NLP) and lexical features to create a robust URL classifier. It is hosted on Huggingface Space and utilizes the Gradio interface for user interaction.
-
-## Project Deployment
-The project is deployed on Huggingface space using gradio interface, which allows users to enter a URL and get a prediction as well as an explanation of why the prediction was made. Users can also flag false results, which will store the URL and its correct type (malicious or safe) in a MySQL database. This way, the model can learn from user feedback and improve over time.
+The URL Classifier is a powerful machine learning application designed to classify URLs as safe or malicious. In today's cybersecurity landscape, identifying potentially harmful URLs is crucial in mitigating cyber threats and phishing attacks. This project leverages both Natural Language Processing (NLP) and lexical features to create URL classifier.
 
 
 ## Usage
@@ -34,21 +30,17 @@ Once you have access, follow these steps:
 
 1. Input the URL you want to classify.
 2. The classifier will predict whether the URL is safe or malicious.
-3. If the prediction is incorrect, you can flag it for further analysis, and the URL will be stored in the database.
-
 
 ## Local Device Installation
 ### REQUIREMENTS
 To use this project effectively, ensure you have the following prerequisites:
 
 - Python 3.8 or higher
-- mysql-connector-python 8.1.0
 - numpy 1.23.5
 - pandas 1.5.3
 - scikit_learn 1.2.2
 - tensorflow 2.12.0
 - nltk 3.8.1
-- gradio 3.40.1
 
 ### Installation
 To set up this project, follow these steps:
@@ -77,22 +69,6 @@ To set up this project, follow these steps:
    ```bash
    pip install -r requirements.txt
    ```
-
-5. Create a MySQL database(url_classifier) with the following credentials and update these details in app.py:
-   - Host: localhost
-   - User: root
-   - Password: root
-   - Database: url_classifier
-
-6. Run the `create_table.sql` script at your MySQL server to create the table for storing URLs and their classifications.
-
-7. Launch the web app using the following command:
-   ```bash
-   python app.py
-   ```
-## Database for Feedback
-
-Feedback data is stored and retrieved from a MySQL database provided by [www.freesqldatabase.com](www.freesqldatabase.com). This free service offers a 5MB MySQL database for data management.
 
 ## Training Data Collection
 
