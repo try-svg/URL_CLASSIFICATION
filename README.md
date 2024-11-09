@@ -130,28 +130,7 @@ The performance of our machine learning model is impressive:
 
 These results underscore the model's ability to effectively classify URLs, which is critical for cybersecurity. For a comprehensive understanding of how the model is trained and validated, refer to the "Model Training Notebook."
 
-## Contributing
-
-I welcome contributions to enhance the accuracy and functionality of the URL Classifier project. Here are some ways you can contribute:
-
-- **Data**: If you have additional datasets or sources of URL data that can enhance the model's training, please share them with me.
-
-- **Model Improvements**: If you have ideas or techniques to improve the model's performance, feel free to contribute code or suggestions.
-
-- **Feedback**: Use the project interface to provide feedback on false URL classifications to help me refine the model.
 
 
 
-## Acknowledgments
 
-I would like to extend my gratitude to the following entities and communities:
-
-- Kaggle for providing valuable datasets.
-- URLhause, Moz, Tranco, Cisco Umbrella, DomCop, and Majestic Million for their data sources.
-- Gradio for their framework that powers the web interface.
-- HuggingFace for providing free resources to deploy the project.
-- Free Sql Database services for providing MySQL datbase server.
-
-Your contributions and support are integral to the success of this project. Thank you for being part of my effort to enhance cybersecurity through URL classification.
-
-Feel free to explore the project, provide feedback, to make the internet a safer place!
