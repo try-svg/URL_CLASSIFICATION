@@ -91,7 +91,7 @@ For comprehensive insights into data processing, please refer to the "Data Proce
 
 Our URL Classifier project employs a two-pronged approach to URL classification:
 
-1. **NLP-based Model**: This model harnesses the power of N-Gram techniques to identify patterns in URLs. Specifically, it uses 3-Gram (Character-Gram) vectorization. The N-Gram model is adept at recognizing subtle patterns in URLs often associated with malicious intent, such as direct IP addresses or keywords like "pay," "offer," "OTP," and more.
+1. **NLP-based Model**: This model harnesses the power of N-Gram techniques to identify patterns in URLs. Specifically, it uses 5-Gram (Character-Gram) vectorization. The N-Gram model is adept at recognizing subtle patterns in URLs often associated with malicious intent, such as direct IP addresses or keywords like "pay," "offer," "OTP," and more.
 
 2. **Lexical Features Model**: This model is based on a set of 18 lexical features associated with URLs. These features include whether the URL has an IP address, the presence of "http" or "https," URL length, the count of dots (.), the count of "www," and more. These features contribute to the model's ability to differentiate between safe and malicious URLs.
 
@@ -119,16 +119,15 @@ The features used for the lexical features method are:
 The two models are merged as a TensorFlow model, which takes both inputs and outputs a final prediction based on a weighted average of the two scores.
 
 The model performance is evaluated using accuracy, precision, recall, and F1-score metrics.<br>
-For more information, see the modules in Utilities and the [URL Classification Paper](https://ieeexplore.ieee.org/document/10181514).
 
 ## Model Performance
 
-The performance of our machine learning model is impressive:
+The performance of our machine learning model is:
 
 - **Testing Data Accuracy**: 98.4%
 - **Unseen Dataset Accuracy**: 71.1%
 
-These results underscore the model's ability to effectively classify URLs, which is critical for cybersecurity. For a comprehensive understanding of how the model is trained and validated, refer to the "Model Training Notebook."
+These results underscore the model's ability to effectively classify URLs, which is critical for cybersecurity.
 
 
 
