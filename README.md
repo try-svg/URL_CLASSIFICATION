@@ -85,7 +85,6 @@ The data for this project was meticulously collected from various sources:
 
 - [Phishing_Site_URLs_Kaggle Dataset](https://www.kaggle.com/datasets/taruntiwarihp/phishing-site-urls)
 
-For comprehensive insights into data processing, please refer to the "Data Processing Notebook."
 
 ## Data Modeling and Model Architecture
 
